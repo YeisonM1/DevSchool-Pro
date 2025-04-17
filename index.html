@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevSchool Pro</title>
+
+    <!--Prefetch-->
+    <link rel="prefetch" href="contacto.html">
+
+    <!-- Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -48,7 +58,10 @@
             <div class="curso">
                 <div>
                     <a href="cursos.html" class="imagen">
-                        <img class="curso__imagen" src="img/html.jpg" alt="imagen curso">         
+                        <picture>
+                            <source srcset="img/html.webp" type="image/webp">
+                            <img loading="lazy" class="curso__imagen" src="img/html.jpg" alt="imagen curso"> 
+                        </picture>      
                     </a>
                 </div>
                     
@@ -62,7 +75,10 @@
             <div class="curso">
                 <div> 
                     <a href="cursos.html">
-                        <img class="curso__imagen" src="img/css.jpg" alt="imagen curso">                     
+                        <picture>
+                            <source srcset="img/css.webp" type="image/webp">
+                            <img loading="lazy" class="curso__imagen" src="img/css.jpg" alt="imagen curso"> 
+                        </picture>                     
                     </a>
                 </div>
 
@@ -76,12 +92,15 @@
             <div class="curso">
                 <div> 
                     <a href="cursos.html">
-                        <img class="curso__imagen" src="img/JavaScript.jpg" alt="imagen curso">                       
+                        <picture>
+                            <source srcset="img/JavaScript.webp" type="image/webp">
+                            <img loading="lazy" class="curso__imagen" src="img/JavaScript.jpg" alt="imagen curso"> 
+                        </picture>                      
                     </a>
                 </div>
                 <div class="informacion">
                     <h3>JavaScript básico</h3>
-                    <p class="informacion__nivel">Nivel: <span>Intermedio</span></>
+                    <p class="informacion__nivel">Nivel: <span>Intermedio</span></l>
                     <p>Inicia en la programación del navegador con lógica, condicionales, eventos y manipulación del DOM.</p>
                     <a class="boton_cursos" href="cursos.html">Inscribirme</a>
                 </div>               
@@ -89,7 +108,10 @@
             <div class="curso">
                 <div> 
                     <a href="cursos.html">
-                        <img class="curso__imagen" src="img/Diseño-web.jpg" alt="imagen curso">                       
+                        <picture>
+                            <source srcset="img/Diseño-web.webp" type="image/webp">
+                            <img loading="lazy" class="curso__imagen" src="img/Diseño-web.jpg" alt="imagen curso"> 
+                        </picture>                       
                     </a>
                 </div>
                 <div class="informacion">
@@ -102,7 +124,10 @@
             <div class="curso">
                 <div> 
                     <a href="cursos.html">
-                        <img class="curso__imagen" src="img/git.jpg" alt="imagen curso">
+                        <picture>
+                            <source srcset="img/git.webp" type="image/webp">
+                            <img loading="lazy" class="curso__imagen" src="img/git.jpg" alt="imagen curso"> 
+                        </picture> 
                     </a>
                 </div>
 
@@ -116,7 +141,10 @@
             <div class="curso">
                 <div> 
                     <a href="cursos.html">
-                        <img class="curso__imagen" src="img/final.jpg" alt="imagen curso">
+                        <picture>
+                            <source srcset="img/final.webp" type="image/webp">
+                            <img loading="lazy" class="curso__imagen" src="img/final.jpg" alt="imagen curso"> 
+                        </picture> 
                     </a>
                 </div>
                 <div class="informacion">
