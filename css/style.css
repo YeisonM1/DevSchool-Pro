@@ -80,8 +80,13 @@ h1, h2, h3 {
 }
 
 /* Banner */
-.hero {
+.webp .hero {
     background-image: url(../img/banner.jpg);
+}
+.no-webp .header {
+    background-image: url(../img/banner.jpg); 
+}
+.hero {
     height: 50rem;
     background-size: cover;
     background-repeat: no-repeat;
